@@ -145,7 +145,7 @@ ul {
 }
 
 .fix-links .social-link {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Start Navbar */
@@ -1154,9 +1154,11 @@ footer .social-media {
     .contact .form-input {
         margin-bottom: 0.8rem;
     }
-    .filter-btn {
-        font-size: 0.7rem;
+    .fix-links {
+        display: none;
     }
+    
+
  }
 
 /* -------- 768px screen */
@@ -1354,7 +1356,9 @@ footer .social-media {
     .contact .squares-two {
         display: none;
     }
-    
+    .fix-links {
+        display: none;
+    }
 }
 
 /* -------- 500px screen */
@@ -1362,6 +1366,9 @@ footer .social-media {
 @media (max-width:500px){
     .container {
         padding: 0 1rem;
+    }
+    .fix-links {
+        display: none;
     }
     .showcase-area .container {
         row-gap: 4.5rem;
