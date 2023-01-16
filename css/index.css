@@ -983,6 +983,13 @@ header .logo {
     transition: 0.3s color;
 }
 
+.contact-info ul {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .form-input {
     display: inline-block;
     padding: 0.9rem 1.5rem;
@@ -1154,11 +1161,6 @@ footer .social-media {
     .contact .form-input {
         margin-bottom: 0.8rem;
     }
-    .fix-links {
-        display: none;
-    }
-    
-
  }
 
 /* -------- 768px screen */
@@ -1356,9 +1358,6 @@ footer .social-media {
     .contact .squares-two {
         display: none;
     }
-    .fix-links {
-        display: none;
-    }
 }
 
 /* -------- 500px screen */
@@ -1366,9 +1365,6 @@ footer .social-media {
 @media (max-width:500px){
     .container {
         padding: 0 1rem;
-    }
-    .fix-links {
-        display: none;
     }
     .showcase-area .container {
         row-gap: 4.5rem;
