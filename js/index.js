@@ -171,3 +171,31 @@ function sendMail() {
       })
       .catch(err=>console.log(err));
   }
+
+  function showMoreSkills() {
+    let firstDiv = document.getElementById("show-more-skills-one");
+    let parentDiv = document.getElementById("showMoreLessWrapper");
+    let parentDivHeight = parentDiv.offsetHeight;
+    let firstDivHeight = firstDiv.offsetHeight;
+
+    var button = document.getElementById("showMoreBtn");
+    console.log(button.innerHTML)
+    if (button.innerHTML == "Read More") {
+        parentDiv.height = firstDivHeight * 3;
+        button.innerHTML = "Read Less";
+    } else if(button.innerHTML = "Read Less") {
+        parentDiv.style.height = firstDivHeight / 3;
+
+        button.innerHTML = "Read More";
+    }
+
+    // var skillsContainer = document.getElementById("show-more-skills-two");
+    // var button = document.getElementById("showMoreBtn");
+    // if (!skillsContainer.classList.contains("showed")) {
+    //     skillsContainer.classList.add("showed");
+    //     button.innerHTML = "Read Less";
+    // } else {
+    //     skillsContainer.classList.remove("showed");
+    //     button.innerHTML = "Read More";
+    // }
+}
