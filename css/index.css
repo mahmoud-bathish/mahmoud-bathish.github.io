@@ -978,7 +978,7 @@ header .logo {
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
-    padding: ;
+    /* padding: ; */
 }
 
 .slider-wrap img.showImage{
